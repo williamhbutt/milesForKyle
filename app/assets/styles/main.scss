@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    MAIN.CSS
+\*------------------------------------*/
+
+/**
+ * Bower SCSS Components
+ * (import directives generated automatically in most cases)
+ */
+// bower:scss
+// endbower
+
+/**
+ * Base
+ */
+@import "normalize";
+@import "vars";
+@import "mixins";
+@import "global";
+
+/**
+ * Project-specific components.
+ */
+@import "../../components/navigation/navigation";
+
+/**
+ * Pages
+ */
+@import "../../pages/home/home";

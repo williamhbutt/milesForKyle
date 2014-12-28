@@ -1,0 +1,239 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+// variables
+$blue: #0B2E59;
+$yellow: #F6C326;
+$light-green: #A0C55F;
+$green: #7AB317;
+$light-green-translucent: rgba(160,197,95,0.7);
+$purple: #2A044A;
+$dark-gray: rgb(85, 85, 85);
+$dark-green: #0D6759;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: $green;
+}
+
+iframe {
+    width: 100%;
+}
+// sections
+.header {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background-color: $blue;
+    color: #fff;
+    top: 0px;
+    z-index: 100;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.banner {
+    text-align: center;
+    color: #FFF;
+    background: #222222 url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    background-position-y: 65px;
+    background-position-x: -200px;
+    hr {
+        border-style: solid;
+        width: 90%;
+        border-width: 1px;
+        border-bottom: 0;
+        color: $dark-green;
+    }
+    &__title {
+        margin: 0;
+        margin-bottom: 5px;
+        color: $purple;
+    }
+    &__description {
+        margin: 0;
+        font-weight: lighter;
+    }
+    &__invitation {
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: lighter;
+    }
+    &__date {
+        margin: 0;
+        color: $purple;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__text {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        background-color: $light-green-translucent;
+        position: relative;
+        top: 75px;
+        border-radius: 3px;
+    }
+
+    @include respond-to($tablet) {
+        background-position-y: 50px;
+        background-position-x: 0px;
+        padding-bottom: 200px;
+
+
+        &__text {
+            display: inline-block;
+            width: 50%;
+            top: 115px;
+            padding: 20px 10px;
+        }
+        hr {
+            margin: 20px 0px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__title {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+        &__description {
+            font-size: 24px;
+        }
+        &__invitation {
+            font-size: 24px;
+        }
+        &__date {
+            font-size: 35px;
+            margin-top: 15px;
+        }
+
+    }
+}
+
+.info {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: $dark-gray;
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__item-list {
+        margin: 0;
+        padding: 0;
+        font-weight: lighter;
+        h4 {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top: 25px;
+            margin-bottom: 6px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    &__item {
+        display: block;
+    }
+
+    .race-features-list {
+        list-style: initial;
+        padding-left: 1.25em;
+        padding-right: 1.5em;
+    }
+
+    @include respond-to($tablet) {
+    .center {
+        text-align: center;
+    }
+        padding-left: 2%;
+        padding-right: 2%;
+        &__title {
+            font-size: 38px;
+        }
+
+        &__column {
+            display: inline-block;
+            width: 32%;
+            margin-right: 1%;
+            vertical-align: top;
+            padding-left: 2%;
+            padding-right: 2%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.register {
+    text-align: center;
+    color: $dark-gray;
+}
+
+.kyle {
+    padding: 5%;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: $light-green;
+    color: #fff;
+    width: 100%;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__pic {
+        width: 90%;
+        margin: 0 auto 15px auto;
+    }
+    @include respond-to($tablet) {
+        &__pic {
+            float: right;
+            width: 50%;
+            margin-left: 20px;
+        }
+
+        .kyle-profile {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: lighter;
+        }
+    }
+}
+
+.epilepsySurgery {
+    padding: 5%;
+    box-sizing: border-box;
+    color: $dark-gray;
+    font-size: 0;
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+
+    @include respond-to($tablet) {
+        .our-cause__column {
+            font-size: 18px;
+            display: inline-block;
+            width: 50%;
+            padding-left: 2%;
+            padding-right: 2%;
+            box-sizing:border-box;
+            font-weight: lighter;
+            vertical-align: top;
+            line-height: 28px;
+        }
+    }
+}
