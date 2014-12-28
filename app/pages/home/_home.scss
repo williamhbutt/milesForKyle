@@ -29,6 +29,41 @@ iframe {
     color: #fff;
     top: 0px;
     z-index: 100;
+    &__title {
+        display: inline-block;
+        font-size: 25px;
+        letter-spacing: 3px;
+        font-weight: normal;
+    }
+    &__menu-btn {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -12px;
+        img {
+            width: 25px;
+        }
+    }
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: $blue;
+    border-top: 1px solid $purple;
+    z-index: 10;
+    color: #fff;
+    top: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    &__item {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
 }
 
 .bold {
@@ -41,7 +76,7 @@ iframe {
     background: #222222 url(../images/banner.jpg) no-repeat;
     background-size: cover;
     min-height: 450px;
-    background-position-y: 65px;
+    background-position-y: 55px;
     background-position-x: -200px;
     hr {
         border-style: solid;
