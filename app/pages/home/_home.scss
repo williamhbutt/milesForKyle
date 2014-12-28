@@ -51,7 +51,7 @@ iframe {
     position: fixed;
     width: 100%;
     background: $blue;
-    border-top: 1px solid $purple;
+    border-top: 1px solid $dark-gray;
     z-index: 10;
     color: #fff;
     top: 55px;
@@ -160,6 +160,7 @@ iframe {
     &__title {
         text-align: center;
         text-transform: uppercase;
+        font-size: 26px;
     }
     &__item-list {
         margin: 0;
@@ -225,6 +226,7 @@ iframe {
     }
 
     &__pic {
+        display: block;
         width: 90%;
         margin: 0 auto 15px auto;
     }
@@ -256,6 +258,9 @@ iframe {
     h3 {
         text-transform: uppercase;
         font-weight: normal;
+    }
+    .our-cause__column {
+        font-size: 14px;
     }
 
     @include respond-to($tablet) {
