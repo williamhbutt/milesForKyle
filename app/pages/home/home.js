@@ -8,10 +8,10 @@ APP.home = (function(){
         $('.js-toggle-nav').click(function(e) {
             e.preventDefault();
 
-            if ($('.mobile-nav').hasClass('active')) {
-                $('.mobile-nav').slideUp().removeClass('active');
+            if ($('.nav').hasClass('active')) {
+                $('.nav').slideUp().removeClass('active');
             } else {
-                $('.mobile-nav').slideDown().addClass('active');
+                $('.nav').slideDown().addClass('active');
             }
         });
     };

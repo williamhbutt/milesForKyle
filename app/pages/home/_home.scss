@@ -8,6 +8,7 @@ $light-green-translucent: rgba(160,197,95,0.7);
 $purple: #2A044A;
 $dark-gray: rgb(85, 85, 85);
 $dark-green: #0D6759;
+$blue-translucent: rgba(11,46,89,0.6);
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -44,25 +45,50 @@ iframe {
             width: 25px;
         }
     }
+
+    @include respond-to($tablet) {
+        &__title {
+        }
+        &__menu-btn {
+            display: none;
+        }
+    }
 }
 
-.mobile-nav {
+.nav {
     display: none;
     position: fixed;
     width: 100%;
     background: $blue;
-    border-top: 1px solid $dark-gray;
+    /*border-top: 2px solid $dark-gray;*/
     z-index: 10;
     color: #fff;
     top: 55px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 5px;
     text-align: center;
     &__item {
         display: block;
         color: #fff;
         text-decoration: none;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-top: 1px solid $light-green-translucent;
+        text-transform: uppercase;
+    }
+
+    @include respond-to($tablet) {
+        display: block;
+        padding: 0;
+        margin-top: -15px;
+
+        &__item {
+            display: inline-block;
+            border: none;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-weight: lighter;
+        }
     }
 }
 
@@ -115,6 +141,21 @@ iframe {
         position: relative;
         top: 75px;
         border-radius: 3px;
+        max-width: 275px;
+    }
+
+    @include respond-to(475px) {
+        background-position-x: -150px;
+    }
+    @include respond-to(525px) {
+        background-position-x: -100px;
+    }
+    @include respond-to(575px) {
+        background-position-x: -50px;
+    }
+    @include respond-to(625px) {
+        background-position-x: 0px;
+
     }
 
     @include respond-to($tablet) {
@@ -126,6 +167,7 @@ iframe {
         &__text {
             display: inline-block;
             width: 50%;
+            max-width: 500px;
             top: 115px;
             padding: 20px 10px;
         }
@@ -144,6 +186,10 @@ iframe {
         }
         &__invitation {
             font-size: 24px;
+            .bold {
+                margin-top: 10px;
+                display: inline-block;
+            }
         }
         &__date {
             font-size: 35px;
@@ -275,5 +321,29 @@ iframe {
             vertical-align: top;
             line-height: 28px;
         }
+    }
+}
+
+.results {
+    color: $blue;
+    background-color: #eee;
+    padding: 2%;
+    text-align: center;
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        padding: 0px 20px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 10px;
     }
 }
