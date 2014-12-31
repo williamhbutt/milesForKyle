@@ -149,7 +149,7 @@ module.exports = function (grunt) {
                     width: 1024
                 },
                 files: {
-                    '/assets/styles/legacy.css': ['/assets/styles/main.css']
+                    '<%= pkg.dist %>/assets/styles/legacy.css': ['<%= pkg.dist %>/assets/styles/main.css']
                 }
             }
         },
@@ -409,7 +409,7 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'stripmq:dist',
-        'rev',
+        //'rev',
         'usemin',
         'exec:version',
         'notify:build'
