@@ -4,7 +4,7 @@ $blue: #0B2E59;
 $yellow: #F6C326;
 $light-green: #A0C55F;
 $green: #7AB317;
-$light-green-translucent: rgba(160,197,95,0.7);
+$light-green-translucent: rgba(160,197,95,0.75);
 $purple: #2A044A;
 $dark-gray: rgb(85, 85, 85);
 $dark-green: #0D6759;
@@ -115,15 +115,19 @@ iframe {
         margin: 0;
         margin-bottom: 5px;
         color: $purple;
+        font-size: 25px;
     }
     &__description {
         margin: 0;
-        font-weight: lighter;
     }
     &__invitation {
         margin: 0;
         margin-bottom: 5px;
-        font-weight: lighter;
+        .bold {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            display: inline-block;
+        }
     }
     &__date {
         margin: 0;
@@ -141,7 +145,8 @@ iframe {
         position: relative;
         top: 75px;
         border-radius: 3px;
-        max-width: 275px;
+        max-width: 280px;
+        font-size: 18px;
     }
 
     @include respond-to(475px) {
@@ -203,20 +208,22 @@ iframe {
     padding-left: 5%;
     padding-right: 5%;
     color: $dark-gray;
+    padding-bottom: 15px;
     &__title {
         text-align: center;
         text-transform: uppercase;
-        font-size: 26px;
+        font-size: 25px;
     }
     &__item-list {
         margin: 0;
         padding: 0;
         font-weight: lighter;
         h4 {
-            font-size: 20px;
-            text-transform: uppercase;
+            font-size: 18px;
+            /*text-transform: uppercase;*/
             margin-top: 25px;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
+            color: #666;
         }
         p {
             margin: 0;
@@ -224,6 +231,9 @@ iframe {
     }
     &__item {
         display: block;
+    }
+    .location {
+        margin-bottom: 8px;
     }
 
     .race-features-list {
@@ -239,7 +249,7 @@ iframe {
         padding-left: 2%;
         padding-right: 2%;
         &__title {
-            font-size: 38px;
+            margin-bottom: 0px;
         }
 
         &__column {
@@ -257,6 +267,37 @@ iframe {
 .register {
     text-align: center;
     color: $dark-gray;
+    background-color: #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__title {
+        margin-top: 0px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    li {
+        text-align: left;
+        font-weight: lighter;
+    }
+
+    @include respond-to($tablet) {
+        &__subtitle {
+            text-align: center;
+        }
+        ul {
+            display: inline-block;
+            text-align: center;
+        }
+    }
 }
 
 .kyle {
@@ -266,9 +307,12 @@ iframe {
     background-color: $light-green;
     color: #fff;
     width: 100%;
+    font-weight: lighter;
 
     &__title {
         text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
     }
 
     &__pic {
@@ -293,20 +337,23 @@ iframe {
 
 .epilepsySurgery {
     padding: 5%;
+    padding-top: 0px;
     box-sizing: border-box;
     color: $dark-gray;
     font-size: 0;
     &__title {
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
         text-transform: uppercase;
     }
     h3 {
         text-transform: uppercase;
-        font-weight: normal;
+    }
+    h4 {
+        font-size: 18px;
     }
     .our-cause__column {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     @include respond-to($tablet) {
@@ -317,7 +364,6 @@ iframe {
             padding-left: 2%;
             padding-right: 2%;
             box-sizing:border-box;
-            font-weight: lighter;
             vertical-align: top;
             line-height: 28px;
         }
@@ -332,8 +378,9 @@ iframe {
 
     &__title {
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
         margin: 10px 0px;
+        text-transform: uppercase;
     }
     ul {
         margin: 0;
@@ -345,5 +392,24 @@ iframe {
         display: inline-block;
         margin-right: 15px;
         margin-bottom: 10px;
+    }
+}
+
+.anchor {
+    position: relative;
+    top: -75px;
+    @include respond-to($tablet) {
+        top: -100px;
+    }
+}
+
+.footer {
+    background-color: $blue;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px;
+    a {
+        margin-right: 5px;
+        display: inline-block;
     }
 }

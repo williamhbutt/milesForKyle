@@ -14,6 +14,13 @@ APP.home = (function(){
                 $('.nav').slideDown().addClass('active');
             }
         });
+
+        $('.nav__item').click(function(e) {
+            console.log($(window).width());
+            if ($(window).width() <= 768) {
+                $('.nav').slideUp().removeClass('active');
+            }
+        });
     };
 
     var init = function() {

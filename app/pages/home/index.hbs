@@ -9,6 +9,7 @@
 
     <nav class="nav">
         <a class="nav__item" href="#info">Event Info</a>
+        <a class="nav__item" href="#register">Register</a>
         <a class="nav__item" href="#kyle">Kyle's Story</a>
         <a class="nav__item" href="#our-cause">Our Cause</a>
         <a class="nav__item" href="#results">Results</a>
@@ -24,11 +25,16 @@
         </div>
     </div>
 
-    <div id="info" class="info">
+    <div class="info">
+        <div id="info" class="anchor"></div>
         <h3 class="info__title">Event Information</h3>
         <div class="row flush">
             <div class="info__column">
                 <ul class="info__item-list">
+                    <li class="info__item">
+                    <h4>Date</h4>
+                    <p>October 18<sup>th</sup>, 2015</p>
+                    </li>
                     <li class="info__item">
                     <h4>Registration Time</h4>
                     <p>8:30-9:45am</p>
@@ -39,7 +45,7 @@
                     </li>
                     <li class="info__item">
                     <h4>Entrance Fee</h4>
-                    <p>$20 Adults, Free for Children under age 12</p>
+                    <p>$20 per person<br>Free for children under 12</p>
                     </li>
                     <li class="info__item">
                     <h4>Race Features</h4>
@@ -56,7 +62,7 @@
                 <ul class="info__item-list">
                     <li class="info__item">
                     <h4>Location</h4>
-                    <p>Preston Beach Park, Atlantic Ave, Swampscott, MA</p>
+                    <p class="location">Preston Beach Park, Atlantic Ave, Swampscott, MA</p>
                     <iframe
                         width="250"
                         height="300"
@@ -87,40 +93,40 @@
 </div>
 
 
-<div id="register" class="register">
-    <h3>Register for this year's race:</h3>
-    <h5>Either</h5>
-    <div>Print and the fill out the <a target="_blank" href="register.html">registration form</a>, then mail to:
-        <p class="address"><br> Miles for Kyle <br>
-        c/o Mark Butt <br>
-        43 Crosman Avenue <br>
-        Swampscott, MA 01907</p>
-    </div>
-    <h5><br>Or</h5>
-    <a target="_blank" href="http://www.running4free.com/RaceDetails.aspx?raceid=200">Register Online</a>
+<div class="register">
+    <div id="register" class="anchor"></div>
+    <h3 class="register__title">Registration</h3>
+    <h5 class="register__subtitle">You can register for this year's race:</h5>
+    <ul>
+        <li><a target="_blank" href="http://www.running4free.com/RaceDetails.aspx?raceid=200">Online</a></li>
+        <li>By mail (form available <a target="_blank" href="registration.html">here</a>)</li>
+        <li>In person, the day of the race</li>
+    </ul>
 </div>
 
-<div id="kyle" class="kyle">
+<div class="kyle">
+    <div id="kyle" class="anchor"></div>
     <section class="container">
         <header class="major">
-            <h2 class="kyle__title">Kyle's Story</h2>
+            <h3 class="kyle__title">Kyle's Story</h3>
         </header>
-        <p class="kyle-profile column"><img class="kyle__pic" src="assets/images/kyle.jpg" alt="Kyle">We are celebrating the 9th year of the Miles for Kyle Run/Walk for Pediatric Epilepsy. What started as an effort to rally support, strength, and assistance for their 5 month old family member struggling with Pediatric Epilepsy has evolved over the past 9 years into a fundraising and awareness effort to assist and inform families of surgical options and availability around the country as they struggle with their own battles against this terrible disease.
+        <p class="kyle-profile column"><img class="kyle__pic" src="assets/images/kyle.jpg" alt="Kyle">We are celebrating the 10th year of the Miles for Kyle Run/Walk for Pediatric Epilepsy. What started as an effort to rally support, strength, and assistance for their 5 month old family member struggling with Pediatric Epilepsy has evolved over the past 10 years into a fundraising and awareness effort to assist and inform families of surgical options and availability around the country as they struggle with their own battles against this terrible disease.
 
         </p>
-        <p class="kyle-profile">Since Kyle's surgery in May of 2007 with Dr. William Bingaman of the Children's Hospital at the Cleveland Clinic, he has suffered only 2 seizures and has not had any in the past 5 years. Kyle is entering the 3rd grade at the Stanley School and continues to develop and learn at an amazing rate. He also played baseball again this year with the Swampscott Little League. He is always listening to music and is even taking piano lessons, having his first recital last spring. He continues to amaze his family and is an inspiration to us all. </p>
+        <p class="kyle-profile">Since Kyle's surgery in May of 2007 with Dr. William Bingaman of the Children's Hospital at the Cleveland Clinic, he has suffered only 2 seizures and has not had any in the past 6 years. Kyle is entering the 3rd grade at the Stanley School and continues to develop and learn at an amazing rate. He also played baseball again this year with the Swampscott Little League. He is always listening to music and is even taking piano lessons, having his first recital last spring. He continues to amaze his family and is an inspiration to us all. </p>
     </section>
 </div>
 
-<div id="our-cause" class="epilepsySurgery">
+<div class="epilepsySurgery">
+    <div id="our-cause" class="anchor"></div>
     <section class="container">
         <header class="major">
-            <h2 class="epilepsySurgery__title">About Our Cause</h2>
+            <h3 class="epilepsySurgery__title">About Our Cause</h3>
         </header>
         <div class="row double">
             <div class="our-cause__column">
                 <header class="major">
-                    <h3>Epilepsy Surgery</h3>
+                    <h4>Epilepsy Surgery</h4>
                     <p>While brain surgery has been a viable option on adults for many years, it is still a relatively new option for pediatric patients suffering from various epilepsy diagnoses. Miles for Kyle is intended to raise awareness for pediatric epilepsy surgery. Proceeds and contributions will be donated to Dr. Deepak Lachwanni of the Cleveland Clinic's Pediatric Epilepsy Support Group (PESG) to support the ongoing research necessary to assist other pediatric patients and their families.</p>
                     <p>Pediatric epilepsy surgery can be used to treat a highly selected group of patients whose seizures are not controllable by standard means.</p>
                     <p>The appropriate candidate for epilepsy surgery must meet several criteria.</p>
@@ -129,75 +135,28 @@
                 </header>
             </div>
             <div class="our-cause__column">
-                <h3>Infantile Spasms</h3>
+                <h4>Infantile Spasms</h4>
                 <p>Infantile spasm (IS) is a specific type of seizure seen in an epilepsy syndrome of infancy and early childhood. The onset is predominantly in the first year of life, typically between 3-6 months. The typical pattern of IS is a sudden bending forward and stiffening of the body, arms, and legs; although there can also be arching of the torso. Spasms tend to begin soon after arousal from sleep. Individual spasms typically last for 1 to 5 seconds and occur in clusters, ranging from 2 to 100 spasms at a time. Infants may have dozens of clusters and several hundred spasms per day. Infantile spasms usually stop by age 5, but are often replaced by other seizure types.</p>
-                <h3 class="headline__section2">Treatment for Infantile Spasms</h3>
+                <h4 class="headline__section2">Treatment for Infantile Spasms</h4>
                 <p>Treatment with corticosteroids such as ACTH (adrenocorticotrophic hormone) and prednisone is standard, despite the risk of serious side effects. Newer antiepileptic medications, such as vigabatrin (which has recently received US FDA approval) have shown some efficacy.</p>
             </div>
         </div>
     </section>
 </div>
 
-
-<!-- Section Three -->
-
-<!--<div class="wrapper style4">-->
-<!--<section class="container">-->
-<!--<header class="major">-->
-<!--<h2 class="photos-title" >2013 Photos</h2>-->
-<!--</header>-->
-<!--[><div id="gallery"><]-->
-<!--[><div class="item vert"><img src="assets/images/race18.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race19.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race20.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race21.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race23.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race24.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race25.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race26.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race27.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item vert"><img src="assets/images/race28.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race1.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race2.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race3.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race4.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race5.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race6.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race7.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race8.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race9.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race10.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race11.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race12.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race13.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race14.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race15.JPG" alt="Race Image"></div><]-->
-<!--[><div class="item"><img src="assets/images/race16.JPG" alt="Race Image"></div><]-->
-            <!--[><div class="item"><img src="assets/images/race17.JPG" alt="Race Image"></div><]-->
-            <!--[></div><]-->
-            <!--<a target="_blank" href="https://www.facebook.com/pages/Miles-For-Kyle/131087696970346">More pictures from previous years on our facebook page!</a>-->
-        <!--</section>-->
-    <!--</div>-->
-
     {{> results}}
 
-    <!--<div class="footer">-->
-        <!--<div class="facebook">-->
-            <!--<a target="_blank" href="https://www.facebook.com/pages/Miles-For-Kyle/131087696970346">-->
-                <!--<span>Like us on facebook!</span>-->
-                <!--<img class="facebook-icon" src="assets/images/fb-icon.svg">-->
-            <!--</a>-->
-        <!--</div>-->
-        <!--<div class="sponsored-by">Sponsored By:</div>-->
-        <!--<div class="sponsors">-->
-            <!--<a target="_blank" href="http://www.newbalance.com/">New Balance</a>-->
-            <!--<a target="_blank" href="http://www.wholefoodsmarket.com/">Whole Foods</a>-->
-            <!--<a target="_blank" href="http://www.flanneryhandymen.com/">Flannery's Handymen</a>-->
-            <!--<a target="_blank" href="http://www.sirspeedyboston.com/">Sir Speedy</a>-->
-            <!--<a target="_blank" href="http://www.mjrussoconstruction.com/">Russo Construction</a>-->
-            <!--<a target="_blank" href="http://www.elitelacrosse.org/">Elite Lacrosse</a>-->
-        <!--</div>-->
-    <!--</div>-->
+    <div class="footer">
+        <div class="sponsored-by">Sponsored By:</div>
+        <div class="sponsors">
+            <a target="_blank" href="http://www.newbalance.com/">New Balance</a>
+            <a target="_blank" href="http://www.wholefoodsmarket.com/">Whole Foods</a>
+            <a target="_blank" href="http://www.flanneryhandymen.com/">Flannery's Handymen</a>
+            <a target="_blank" href="http://www.sirspeedyboston.com/">Sir Speedy</a>
+            <a target="_blank" href="http://www.mjrussoconstruction.com/">Russo Construction</a>
+            <a target="_blank" href="http://www.elitelacrosse.org/">Elite Lacrosse</a>
+        </div>
+    </div>
 
 
 </div>
