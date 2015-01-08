@@ -24,17 +24,17 @@ APP.global = (function(){
         * initialize components for the current page
         */
         initPageComponents();
-        $("#2013results").tablesorter();
+        //$("#2013results").tablesorter();
 
-        $("#gallery").owlCarousel({
+        //$("#gallery").owlCarousel({
 
-            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            //autoPlay: 3000, //Set AutoPlay to 3 seconds
 
-            items : 2
-            //itemsDesktop : [1199,3],
-            //itemsDesktopSmall : [979,3]
+            //items : 2
+            ////itemsDesktop : [1199,3],
+            ////itemsDesktopSmall : [979,3]
 
-        });
+        //});
     };
 
     /**
