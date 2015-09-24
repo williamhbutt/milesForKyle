@@ -63,6 +63,24 @@ iframe {
     }
 }
 
+.alert {
+    background-color: #ffde00;
+    width: 100%;
+    p {
+        margin: 0;
+        text-align: center;
+        font-size: 22px;
+        padding: 15px 10px 5px 10px;
+        color: $blue;
+        line-height: 125%;
+    }
+    .alert-copy {
+        font-size: 15px;
+        margin: 0;
+        padding: 5px 10px 15px 10px;
+    }
+}
+
 .nav {
     display: none;
     position: fixed;
